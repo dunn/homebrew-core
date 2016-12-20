@@ -23,12 +23,17 @@ class Hugo < Formula
 
   go_resource "github.com/PuerkitoBio/purell" do
     url "https://github.com/PuerkitoBio/purell.git",
-        :revision => "8a290539e2e8629dbc4e6bad948158f790ec31f4"
+        :revision => "0bcb03f4b4d0a9428594752bd2a3b9aa0a9d4bd4"
   end
 
   go_resource "github.com/PuerkitoBio/urlesc" do
     url "https://github.com/PuerkitoBio/urlesc.git",
         :revision => "5bd2802263f21d8788851d5305584c82a5c75d7e"
+  end
+
+  go_resource "github.com/bep/gitmap" do
+    url "https://github.com/bep/gitmap.git",
+        :revision => "a1a71abe12823e27ae7507189fe2e914ba9626ac"
   end
 
   go_resource "github.com/bep/inflect" do
@@ -48,37 +53,37 @@ class Hugo < Formula
 
   go_resource "github.com/eknkc/amber" do
     url "https://github.com/eknkc/amber.git",
-        :revision => "7875e9689d335cd15294cd6f4f0ef8322ce4c8e7"
+        :revision => "a69a021e158c3b06700cc881c05d0923f627b578"
+  end
+
+  go_resource "github.com/fortytw2/leaktest" do
+    url "https://github.com/fortytw2/leaktest.git",
+        :revision => "0db74e8cd5adacfcc982838c6e185789e4b44e14"
   end
 
   go_resource "github.com/fsnotify/fsnotify" do
     url "https://github.com/fsnotify/fsnotify.git",
-        :revision => "f12c6236fe7b5cf6bcf30e5935d08cb079d78334"
+        :revision => "fd9ec7deca8bf46ecd2a795baaacf2b3a9be1197"
   end
 
   go_resource "github.com/gorilla/websocket" do
     url "https://github.com/gorilla/websocket.git",
-        :revision => "2d1e4548da234d9cb742cc3628556fef86aafbac"
+        :revision => "e8f0f8aaa98dfb6586cbdf2978d511e3199a960a"
   end
 
   go_resource "github.com/hashicorp/hcl" do
     url "https://github.com/hashicorp/hcl.git",
-        :revision => "ef8133da8cda503718a74741312bf50821e6de79"
+        :revision => "c3e054bfd4dcf77b9965ed2b79b22afa2f41d4eb"
   end
 
   go_resource "github.com/inconshreveable/mousetrap" do
-    url "github.com/inconshreveable/mousetrap.git",
+    url "https://github.com/inconshreveable/mousetrap.git",
         :revision => "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
   end
 
   go_resource "github.com/kardianos/osext" do
     url "https://github.com/kardianos/osext.git",
         :revision => "c2c54e542fb797ad986b31721e1baedf214ca413"
-  end
-
-  go_resource "github.com/kr/fs" do
-    url "https://github.com/kr/fs.git",
-        :revision => "2788f0dbd16903de03cb8186e5c7d97b69ad387b"
   end
 
   go_resource "github.com/kyokomi/emoji" do
@@ -93,22 +98,17 @@ class Hugo < Formula
 
   go_resource "github.com/miekg/mmark" do
     url "https://github.com/miekg/mmark.git",
-        :revision => "78d9f44038b26a921d5bfa9a013cd74e1c2c83b6"
+        :revision => "2d4f1dd6f87cad351b9323bbaa6f6c586f0c4bee"
   end
 
   go_resource "github.com/mitchellh/mapstructure" do
     url "https://github.com/mitchellh/mapstructure.git",
-        :revision => "ca63d7c062ee3c9f34db231e352b60012b4fd0c1"
+        :revision => "f3009df150dadf309fdee4a54ed65c124afad715"
   end
 
   go_resource "github.com/nicksnyder/go-i18n" do
     url "https://github.com/nicksnyder/go-i18n.git",
-        :revision => "37e5c2de3e03e4b82693e3fcb4a6aa2cc4eb07e3"
-  end
-
-  go_resource "github.com/opennota/urlesc" do
-    url "https://github.com/opennota/urlesc.git",
-        :revision => "5bd2802263f21d8788851d5305584c82a5c75d7e"
+        :revision => "991e81cc94f6c54209edb3192cb98e3995ad71c1"
   end
 
   go_resource "github.com/pelletier/go-buffruneio" do
@@ -118,22 +118,12 @@ class Hugo < Formula
 
   go_resource "github.com/pelletier/go-toml" do
     url "https://github.com/pelletier/go-toml.git",
-        :revision => "45932ad32dfdd20826f5671da37a5f3ce9f26a8d"
-  end
-
-  go_resource "github.com/pkg/errors" do
-    url "https://github.com/pkg/errors.git",
-        :revision => "a887431f7f6ef7687b556dbf718d9f351d4858a0"
-  end
-
-  go_resource "github.com/pkg/sftp" do
-    url "https://github.com/pkg/sftp.git",
-        :revision => "8197a2e580736b78d704be0fc47b2324c0591a32"
+        :revision => "017119f7a78a0b5fc0ea39ef6be09f03acf3345d"
   end
 
   go_resource "github.com/russross/blackfriday" do
     url "https://github.com/russross/blackfriday.git",
-        :revision => "35eb537633d9950afc8ae7bdf0edb6134584e9fc"
+        :revision => "5f33e7b7878355cd2b7e6b8eefc48a5472c69f70"
   end
 
   go_resource "github.com/shurcooL/sanitized_anchor_name" do
@@ -143,22 +133,22 @@ class Hugo < Formula
 
   go_resource "github.com/spf13/afero" do
     url "https://github.com/spf13/afero.git",
-        :revision => "52e4a6cfac46163658bd4f123c49b6ee7dc75f78"
+        :revision => "06b7e5f50606ecd49148a01a6008942d9b669217"
   end
 
   go_resource "github.com/spf13/cast" do
     url "https://github.com/spf13/cast.git",
-        :revision => "2580bc98dc0e62908119e4737030cc2fdfc45e4c"
+        :revision => "24b6558033ffe202bf42f0f3b870dcc798dd2ba8"
   end
 
   go_resource "github.com/spf13/cobra" do
     url "https://github.com/spf13/cobra.git",
-        :revision => "9c28e4bbd74e5c3ed7aacbc552b2cab7cfdfe744"
+        :revision => "6b74a60562f5c1c920299b8f02d153e16f4897fc"
   end
 
   go_resource "github.com/spf13/fsync" do
     url "https://github.com/spf13/fsync.git",
-        :revision => "1773df7b269b572f0fc8df916b38e3c9d15cee66"
+        :revision => "cb2da332d00cbc04e4f3f677520dc3e7cc11874b"
   end
 
   go_resource "github.com/spf13/jwalterweatherman" do
@@ -173,17 +163,17 @@ class Hugo < Formula
 
   go_resource "github.com/spf13/pflag" do
     url "https://github.com/spf13/pflag.git",
-        :revision => "c7e63cf4530bcd3ba943729cee0efeff2ebea63f"
+        :revision => "5ccb023bc27df288a957c5e994cd44fd19619465"
   end
 
   go_resource "github.com/spf13/viper" do
     url "https://github.com/spf13/viper.git",
-        :revision => "670c42a85b2a2215949acd943cb8f11add317e3f"
+        :revision => "651d9d916abc3c3d6a91a12549495caba5edffd2"
   end
 
   go_resource "github.com/stretchr/testify" do
     url "https://github.com/stretchr/testify.git",
-        :revision => "d77da356e56a7428ad25149ca77381849a6a5232"
+        :revision => "976c720a22c8eb4eb6a0b4348ad85ad12491a506"
   end
 
   go_resource "github.com/yosssi/ace" do
@@ -191,29 +181,24 @@ class Hugo < Formula
         :revision => "ea038f4770b6746c3f8f84f14fa60d9fe1205b56"
   end
 
-  go_resource "golang.org/x/crypto" do
-    url "https://go.googlesource.com/crypto.git",
-        :revision => "81372b2fc2f10bef2a7f338da115c315a56b2726"
-  end
-
   go_resource "golang.org/x/net" do
     url "https://go.googlesource.com/net.git",
-        :revision => "71a035914f99bb58fe82eac0f1289f10963d876c"
+        :revision => "4971afdc2f162e82d185353533d3cf16188a9f4e"
   end
 
   go_resource "golang.org/x/sys" do
     url "https://go.googlesource.com/sys.git",
-        :revision => "8f0908ab3b2457e2e15403d3697c9ef5cb4b57a9"
+        :revision => "b699b7032584f0953262cb2788a0ca19bb494703"
   end
 
   go_resource "golang.org/x/text" do
     url "https://go.googlesource.com/text.git",
-        :revision => "04b8648d973c126ae60143b3e1473bc1576c7597"
+        :revision => "a263ba8db058568bb9beba166777d9c9dbe75d68"
   end
 
   go_resource "gopkg.in/yaml.v2" do
     url "https://gopkg.in/yaml.v2.git",
-        :revision => "31c299268d302dd0aa9a0dcf765a3d58971ac83f"
+        :revision => "a5b47d31c556af34a302ce5d659e6fea44d90de0"
   end
 
   def install
