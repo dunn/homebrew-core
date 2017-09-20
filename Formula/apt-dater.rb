@@ -1,8 +1,8 @@
 class AptDater < Formula
   desc "Manage package updates on remote hosts using SSH"
   homepage "https://github.com/DE-IBH/apt-dater"
-  url "https://github.com/DE-IBH/apt-dater/archive/v0.9.0.tar.gz"
-  sha256 "1c361dd686d66473b27db4af8d241d520535c5d5a33f42a35943bf4e16c13f47"
+  url "https://github.com/DE-IBH/apt-dater/archive/v1.0.3.tar.gz"
+  sha256 "891b15e4dd37c7b35540811bbe444e5f2a8d79b1c04644730b99069eabf1e10f"
   version_scheme 1
 
   bottle do
@@ -12,12 +12,19 @@ class AptDater < Formula
     sha256 "2ac3ba56f32d018a9af477484d8ad561871f855aca78726dbe8f43f5552f6acc" => :yosemite
   end
 
+  head do
+    url "https://github.com/DE-IBH/apt-dater.git"
+    depends_on "automake" => :build
+    depends_on "autoconf" => :build
+  end
+
   depends_on "pkg-config" => :build
   depends_on "gettext"
   depends_on "glib"
   depends_on "popt"
 
   def install
+    system "autoreconf", "-ivf" if build.head?
     system "./configure", "--disable-debug",
                           "--disable-dependency-tracking",
                           "--prefix=#{prefix}"
